@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+.primary-footer {
+  padding-bottom: 5rem;
+  .social {
+    & img {
+      &:is(:hover, :focus) {
+        background-color: clr("primary", 500);
+      }
+    }
+    @include mq("medium") {
+      align-self: center;
+      justify-self: right;
+    }
+  }
+}

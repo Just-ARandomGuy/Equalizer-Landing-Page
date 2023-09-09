@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+.phone-jpg {
+  position: absolute;
+  object-fit: cover;
+  height: 26.875rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  transform: translate(0, -20%);
+
+  @include mq("medium") {
+    height: 34.75rem;
+    margin-inline: revert;
+    left: 8%;
+  }
+
+  @include mq("large") {
+    height: 38rem;
+    transform: translate(0, -30%);
+  }
+}

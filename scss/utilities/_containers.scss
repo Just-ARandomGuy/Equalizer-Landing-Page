@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+.container {
+  --padding-default: #{$container-inline-padding} * 2;
+  --max-width-default: #{$container-max-width};
+  width: min(
+    100% - var(--padding, var(--padding-default)),
+    var(--max-width, var(--max-width-default))
+  );
+  margin-inline: auto;
+
+  @include mq("medium") {
+    --padding: calc(#{$container-inline-padding} * 2 + 2rem);
+  }
+
+  @include mq("large") {
+    --padding: 0rem;
+  }
+}

@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+.section {
+  padding-block: $padding-section;
+
+  &[data-type="mobile-no-space"] {
+    --padding: 0;
+  }
+  .container {
+    padding-bottom: 10.75rem;
+  }
+
+  @include mq("medium") {
+    padding-bottom: 12rem;
+  }
+}

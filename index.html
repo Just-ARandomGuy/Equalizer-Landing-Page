@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equalizer landing page</title>
+    <link rel="stylesheet" href="/scss/main.scss" />
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="container">
+        <nav>
+          <ul class="primary-header-nav-list">
+            <li>
+              <a href="index.html"
+                ><img src="assets/logo.svg" alt="equalizer logo"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <img
+          src="assets/bg-pattern-1.svg"
+          alt="pattern1"
+          class="pattern-img hide-on-mobile"
+        />
+      </div>
+    </header>
+    <section class="hero relative">
+      <div class="container">
+        <h1 class="page-title fs-css-var-900 fw-700">
+          We make your music sound extraordinary.
+        </h1>
+        <p>
+          A system audio equalizer specifically designed for Android and iOS.
+          Freely tune the way your music sounds with a professional grade
+          parametric EQ & volume mixer. Control bass, mids, treble, gain
+          control, reverb, and more!
+        </p>
+        <picture>
+          <source
+                  media="(min-width:75em)"
+                  srcset="assets/bg-main-desktop.png"
+          />
+          <source media="(min-width:48em)" srcset="assets/bg-main-tablet.png" />
+          <img src="assets/bg-main-mobile.png" alt="background-cool-effect" />
+        </picture>
+      </div>
+
+    </section>
+    <section class="section" data-type="mobile-no-space">
+      <div class="container border-radius-12 bg-neutral-900 relative">
+        <img src="assets/bg-pattern-2.svg" alt="pattern2" class="mx-auto" />
+        <img
+          src="assets/illustration-app.png"
+          alt="phone with app"
+          class="phone-jpg"
+        />
+        <div
+          class="card clr-neutral-100 bg-primary-400 flow border-radius-12"
+          data-type="premium-plan"
+        >
+          <h2 class="card__title fs-css-var-800 fw-700">Premium EQ</h2>
+          <p class="card__content">
+            Get expert-level control with a robust equalizer, volume mixer, and
+            spatial audio. Take your listening experience to a whole new level
+            and access all our incredible features!
+          </p>
+          <p class="card__price">
+            <span class="fs-card-price fw-700">$4</span>/ month
+          </p>
+          <a href="#" class="button flex-group" data-type="accent">
+            <img src="assets/icon-apple.svg" alt="apple icon" />
+            <p>ios Download</p>
+          </a>
+          <a
+            href="#"
+            class="button flex-group margin-block-start-16"
+            data-type="primary"
+          >
+            <img src="assets/icon-android.svg" alt="apple icon" />
+            <p>Android Download</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="primary-footer">
+      <div class="container">
+        <div class="flex" data-type="large">
+          <a href="index.html">
+            <img src="assets/logo.svg" alt="equalizer logo" />
+          </a>
+          <div class="even-columns" data-type="medium">
+            <div>
+              <p>All rights reserved © Equalizer 2021</p>
+              <p>
+                Have any problems? Contact us via social media or email us at
+                <span class="fw-700">equalizer@example.com</span>
+              </p>
+            </div>
+            <ul class="flex-group social">
+              <li>
+                <a href="#"><img src="assets/icon-facebook.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/icon-instagram.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/icon-twitter.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

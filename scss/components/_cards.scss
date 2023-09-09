@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+.card {
+  padding: $padding-card-body;
+  max-width: 25rem;
+
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  @include mq("medium") {
+    max-width: 28rem;
+  }
+
+  &[data-type="premium-plan"] {
+    transform: translate(0, $padding-card-body * -1);
+    position: absolute;
+    margin-inline: auto;
+    left: 0;
+    right: 0;
+
+    @include mq("medium") {
+      transform: translate(0, -50%);
+      right: 8%;
+      left: auto;
+    }
+  }
+}

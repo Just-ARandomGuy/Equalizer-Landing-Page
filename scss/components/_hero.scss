@@ -1,0 +1,42 @@
+@use "../abstracts" as *;
+.hero {
+  padding-block: $padding-hero;
+  position: relative;
+  overflow-x: clip;
+
+  h1 + p {
+    margin-top: 1.25rem;
+    @include mq("medium") {
+      margin-top: 1.75rem;
+    }
+    @include mq("large") {
+      margin-top: 2.5rem;
+    }
+  }
+
+  h1,
+  p {
+    @include mq("medium") {
+      max-width: 60%;
+    }
+    @include mq("large") {
+      max-width: 80%;
+    }
+  }
+
+  picture {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: translate(50%, -50%);
+
+
+    @include mq("medium") {
+      transform: translate(-15%, -25%);
+    }
+
+    @include mq("large") {
+      transform: translate(-10%, -50%);
+    }
+  }
+}

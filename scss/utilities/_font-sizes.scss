@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+@each $font-key, $font-value in $font-sizes {
+  .fs-#{$font-key} {
+    font-size: $font-value;
+  }
+}
+
+@each $font-key, $font-value in $font-sizes-css-vars {
+  .fs-css-var-#{$font-key} {
+    font-size: $font-value;
+  }
+}
+
+.fs-card-price {
+  font-size: $font-size-card-price;
+}

@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.flex-group {
+  display: flex;
+  gap: $flex-gap;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  column-gap: 8rem;
+
+  &[data-type="large"] {
+    @include mq("large") {
+      flex-direction: row;
+    }
+  }
+}

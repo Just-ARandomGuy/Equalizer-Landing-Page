@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+.primary-header {
+  --padding: #{$container-inline-padding} * 2;
+  padding-top: $padding-header;
+}
+
+.pattern-img {
+  position: absolute;
+  object-fit: cover;
+  right:0;
+  top: -2rem;
+}
